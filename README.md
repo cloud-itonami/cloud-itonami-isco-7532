@@ -13,7 +13,7 @@ ISCO-08 7532 covers patternmakers and cutters who operate rotary cutters, cuttin
 (`cutcoord.governor`), following the itonami actor pattern
 (ADR-2607121000): `:intake -> :advise -> :govern -> :decide -+-> :commit
 (:ok?) +-> :request-approval (:escalate?, human-in-the-loop interrupt)
-+-> :hold (:hard?)`. 25 tests / 55 assertions green (`clojure -M:test`).
++-> :hold (:hard?)`. 25 tests / 55 assertions green (`kbb -M:test`).
 HARD invariants (always hold, never
 overridable): cutter provenance, workshop provenance, no-actuation
 (`:effect` must be `:propose`), a closed op-allowlist
