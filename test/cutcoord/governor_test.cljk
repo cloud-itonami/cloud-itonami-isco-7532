@@ -1,5 +1,5 @@
 (ns cutcoord.governor-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [cutcoord.store :as store]
             [cutcoord.advisor :as advisor]
             [cutcoord.governor :as governor]))
